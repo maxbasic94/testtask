@@ -1,2 +1,48 @@
-.PlayerInfo
-  color: red
+@import "../../shared/colors.sass"
+
+.PlayerInfo-Container
+  display: flex
+  align-items: center
+  justify-content: center
+  column-gap: 9px
+  margin: 24px 11px 0px 11px
+
+  .PlayerInfo-Info
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+
+    .PlayerInfo-Info_userName
+      font-family: 'Montserrat'
+      font-style: normal
+      font-weight: 400
+      font-size: 16px
+      line-height: 20px
+
+    .PlayerInfo-Info_rank
+      display: flex
+      column-gap: 1px
+
+  .PlayerInfo-Avatar
+    width: 32px
+    height: 32px
+    border-radius: 100px
+    border: 1px solid #413E55
+
+  .PlayerInfo-BalanceInfo
+    background: #1E1D27
+    height: 26px
+    border-radius: 24px
+    display: flex
+    align-items: center
+    column-gap: 9px
+
+    .PlayerInfo-BalanceInfo_hideButton
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 32px
+      height: 26px
+      background: $primaryGreen
+      border-radius: 16px
+      border: none
