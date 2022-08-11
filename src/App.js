@@ -1,7 +1,10 @@
 import "./App.sass";
+import { Spinner } from "./components/Spinner/Spinner";
 
-function App() {
-  return <div className="App">hello</div>;
+export const App = () => {
+  return (
+    <div className="App">
+      <Spinner />
+    </div>
+  );
 }
-
-export default App;
